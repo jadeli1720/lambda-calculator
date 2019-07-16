@@ -41,7 +41,22 @@ code {
 .button-container{
   width: 400px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column-reverse;
   justify-content: center;
+  align-content: center;
 }
 
+button{
+  border-radius: 50px;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  margin: 10px 20px;
+}
+
+.operator-buttons{
+  display: flex;
+
+
+}
