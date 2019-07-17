@@ -1,12 +1,12 @@
-import React, {useState} from "react";
+import React from "react";
 //import any components needed
-import { numbers } from '../../../data';
+// import { numbers } from '../../../data';//Moved to App.js
 //Import your array data to from the provided data file
 import NumberButton from './NumberButton';
 
 const Numbers = (props) => {
   // STEP 2 - add the imported data to state
-  // const [numberState, setNumberState] = useState(numbers);
+  // const [numberState, setNumberState] = useState(numbers);//Moved to Apps.js
   const { numberState, setNumberState} = props;
   // console.log(numberState)
   return (

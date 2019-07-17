@@ -9,7 +9,7 @@ import Display from "./components/DisplayComponents/Display";
 import Numbers from "./components/ButtonComponents/NumberButtons/Numbers";
 import Operators from "./components/ButtonComponents/OperatorButtons/Operators";
 import Specials from "./components/ButtonComponents/SpecialButtons/Specials";
-import { numbers } from "./data";
+import { numbers, operators, specials } from "./data";
 
 function App() {
   // STEP 5 - After you get the components displaying using the provided data file, write your state hooks here.
@@ -18,6 +18,9 @@ function App() {
   // the "5" button, or the operator if they click one of those buttons) and then call your setter function to update state.
   // Don't forget to pass the functions (and any additional data needed) to the components as props
   const [numberState, setNumberState] = useState(numbers);
+  const [operatorState, setOperatorState] = useState(operators);
+  const [specialState, setSpecialState] = useState(specials);
+
   return (
     <div className="container">
       <Logo />
@@ -29,11 +32,11 @@ function App() {
         <Display number={0}/>
         <div className="button-container">
           <div className="right-column">
-            <Operators />
+            <Operators operatorState ={operatorState} setOperatorState ={setOperatorState} />
           </div>
           <div className="left-column">
             <Numbers numberState = {numberState} setNumberState = {setNumberState} />
-            <Specials />
+            <Specials specialState = {specialState} setSpecialState = {setSpecialState} />
           </div>
         </div>
       </div>
