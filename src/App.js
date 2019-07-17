@@ -20,6 +20,10 @@ function App() {
   const [numberState, setNumberState] = useState(numbers);
   const [operatorState, setOperatorState] = useState(operators);
   const [specialState, setSpecialState] = useState(specials);
+  const [displayNumber, setDisplayNumber] = useState('');
+  // const addNmuber = (number) => {
+  //   setDisplayNumber(displayNumber + number)
+  // };
 
   return (
     <div className="container">
@@ -29,7 +33,7 @@ function App() {
 {/* Below Display is a function that will have a single argument (props). Remember props is an object that gives/returns an object key  value. */}
 {/*function   key  : value pair
    {Display({number:1024})} */}
-        <Display number={0}/>
+        <Display />
         <div className="button-container">
           <div className="right-column">
             <Operators operatorState ={operatorState} setOperatorState ={setOperatorState} />
