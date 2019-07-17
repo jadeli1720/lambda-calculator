@@ -27,7 +27,7 @@ function App() {
           <div className="right-column">
           <Operators />
           </div>
-          <div className="right-column">
+          <div className="left-column">
             <Numbers />
             <Specials />
           </div>

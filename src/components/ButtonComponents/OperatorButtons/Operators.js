@@ -14,7 +14,7 @@ const Operators = () => {
        it any props needed by the child component*/
 
        Object.values(operatorState).map((props) => OperatorButton(props.char))
-       };
+       }
     </div>
   );
 };
