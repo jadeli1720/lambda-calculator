@@ -22,10 +22,13 @@ function App() {
       <Logo />
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
-        <Display />
+{/* Below Display is a function that will have a single argument (props). Remember props is an object that gives/returns an object key  value. */}
+{/*function   key  : value pair
+   {Display({number:1024})} */}
+        <Display number={0}/>
         <div className="button-container">
           <div className="right-column">
-          <Operators />
+            <Operators />
           </div>
           <div className="left-column">
             <Numbers />
